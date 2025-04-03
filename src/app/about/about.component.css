@@ -1,0 +1,13 @@
+section {
+  min-height: 100vh;
+  background-color: var(--main-color);
+  padding-top: 80px;
+}
+.title {
+  margin-top: 80px;
+  padding-top: 80px;
+}
+.desc {
+  padding: 30px 70px;
+}
+

@@ -1,0 +1,50 @@
+section {
+  min-height: 100vh;
+}
+.title {
+  padding-top: 80px;
+  color: var(--nav-bg);
+}
+.main-title:after,
+.main-title::before {
+  background-color: var(--nav-bg);
+}
+.user-name,
+.user-age,
+.user-email,
+.user-password {
+  margin-block: 20px;
+}
+label {
+  color: var(--main-color);
+  font-weight: 500;
+  position: relative;
+  top: 45px;
+  transition: 0.5s top;
+  z-index: -1;
+}
+
+.form-control {
+  border: none;
+  border-bottom: 1px solid rgba(175, 170, 170, 0.479);
+  margin-top: 10px;
+  
+}
+.form-control:focus {
+  box-shadow: none;
+}
+button,
+button:hover {
+  background-color: var(--main-color);
+  color: #fff;
+}
+@media (max-width: 1100.98px) {
+    form {
+        width: 70% !important;
+    }
+}
+@media (max-width: 905.98px) {
+    form {
+        width: 90% !important;
+    }
+}

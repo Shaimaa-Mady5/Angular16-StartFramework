@@ -1,0 +1,57 @@
+/* You can add global styles to this file, and also import other style files */
+:root {
+  --main-font: "Lato", sans-serif;
+  --nav-bg: #2c3e50;
+  --light-bg-color: #2c3e50;
+  --main-color: #1abc9c;
+  --copy-right-color: #1a252f;
+}
+* {
+  list-style: none;
+  text-decoration: none;
+}
+h1 {
+  font-family: var(--main-font);
+  font-weight: 900;
+}
+.main-title {
+  position: relative;
+}
+.main-title:after {
+  content: "";
+  width: 25%;
+  height: 5px;
+  background-color: #fff;
+  position: absolute;
+  bottom: -50%;
+  left: 20%;
+}
+.main-title::before {
+  content: "";
+  width: 25%;
+  height: 5px;
+  background-color: #fff;
+  position: absolute;
+  bottom: -50%;
+  right: 20%;
+}
+.bg-main-color {
+  background-color: var(--main-color);
+}
+
+@media (max-width: 905.98px) {
+  .main-title:after,
+  .main-title::before {
+    bottom: -60%;
+  }
+
+}
+
+@media (max-width: 767.98px) {
+  h1 {
+    font-size: 30px;
+  }
+  .navbar-brand {
+    font-size: 25px !important;
+  }
+}

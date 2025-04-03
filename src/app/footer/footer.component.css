@@ -1,0 +1,25 @@
+footer {
+  background-color: var(--light-bg-color);
+  color: #fff;
+  min-height: 250px;
+}
+/* footer .footer-content {
+   position: absolute;
+   top: 50%;
+  
+} */
+
+ul {
+  gap: 10px;
+}
+ul li a i {
+  font-size: 18px;
+  padding: 8px;
+  color: #fff;
+  border: 2px solid #fff;
+  border-radius: 50%;
+}
+h4 {
+  font-family: var(--main-font);
+  font-weight: 700;
+}

@@ -1,0 +1,78 @@
+<section>
+  <div class="container">
+    <div class="d-flex justify-content-center">
+      <div class="title text-center">
+        <h1 class="mt-5 main-title">ABOUT COMPONENT</h1>
+
+        <i class="fas fa-star"></i>
+      </div>
+    </div>
+
+    <div class="row">
+      <div class="col-md-12">
+        <form action="" class="my-5 w-50 mx-auto">
+          <div class="user-name">
+            <label
+              for="userName"
+              [ngStyle]="{ top: userName.length > 0 ? '0' : '' }"
+              >userName:</label
+            >
+            <input
+              type="text"
+              name="userName"
+              id="userName"
+              placeholder="userName"
+              class="form-control"
+              [(ngModel)]="userName"
+            />
+          </div>
+
+          <div class="user-age">
+            <label for="userAge"
+            [ngStyle]="{ top: userAge.length > 0 ? '0' : '' }"
+            >userAge:</label>
+            
+            <input
+              type="text"
+              name="userAge"
+              id="userAge"
+              placeholder="userAge"
+              class="form-control"
+              [(ngModel)]="userAge"
+            />
+          </div>
+
+          <div class="user-email">
+            <label for="userEmail"
+            [ngStyle]="{ top: userEmail.length > 0 ? '0' : '' }"
+            >userEmail:</label>
+            <input
+              type="email"
+              name="userEmail"
+              id="userEmail"
+              placeholder="userEmail"
+              class="form-control"
+              [(ngModel)]="userEmail"
+            />
+          </div>
+
+          <div class="user-password">
+            <label for="userPassword"
+            [ngStyle]="{ top: userPassword.length > 0 ? '0' : '' }"
+            >userPassword:</label>
+            <input
+              type="password"
+              name="userPassword"
+              id="userPassword"
+              placeholder="userPassword"
+              class="form-control"
+              [(ngModel)]="userPassword"
+            />
+          </div>
+
+          <button class="btn mt-2">send Message</button>
+        </form>
+      </div>
+    </div>
+  </div>
+</section>
